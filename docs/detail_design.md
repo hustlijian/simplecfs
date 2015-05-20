@@ -290,56 +290,56 @@ Client对用户提供的接口主要包含两类，分别是目录操作和文�
 
 #### 5.1.1 目录创建(mkdir)
 
-![目录创建流程](./img/SimpleCFS Sequence.001.jpg =600x450)
+![目录创建流程](https://raw.githubusercontent.com/hustlijian/simplecfs/master/docs/img/SimpleCFS Sequence.001.jpg =600x450)
 
 #### 5.1.2 目录删除(rmdir)
 
-![目录删除流程](./img/SimpleCFS Sequence.002.jpg =600x450)
+![目录删除流程](https://raw.githubusercontent.com/hustlijian/simplecfs/master/docs/img/SimpleCFS Sequence.002.jpg =600x450)
 
 #### 5.1.3 目录列举(listdir)
 
-![目录列举流程](./img/SimpleCFS Sequence.003.jpg =600x450)
+![目录列举流程](https://raw.githubusercontent.com/hustlijian/simplecfs/master/docs/img/SimpleCFS Sequence.003.jpg =600x450)
 
 #### 5.1.4 目录设置(chdir)
 
-![目录设置流程](./img/SimpleCFS Sequence.004.jpg =600x450)
+![目录设置流程](https://raw.githubusercontent.com/hustlijian/simplecfs/master/docs/img/SimpleCFS Sequence.004.jpg =600x450)
 
 #### 5.1.5 目录信息(statdir)
 
-![目录信息流程](./img/SimpleCFS Sequence.005.jpg =600x450)
+![目录信息流程](https://raw.githubusercontent.com/hustlijian/simplecfs/master/docs/img/SimpleCFS Sequence.005.jpg =600x450)
 
 ### 5.2 文件操作流程
 
 #### 5.2.1 文件写(putfile)
 
-![文件写入流程](./img/SimpleCFS Sequence.006.jpg =600x450)
+![文件写入流程](https://raw.githubusercontent.com/hustlijian/simplecfs/master/docs/img/SimpleCFS Sequence.006.jpg =600x450)
 
 #### 5.2.2 文件正常读(getfile)
 
-![文件正常读流程](./img/SimpleCFS Sequence.007.jpg =600x450)
+![文件正常读流程](https://raw.githubusercontent.com/hustlijian/simplecfs/master/docs/img/SimpleCFS Sequence.007.jpg =600x450)
 
 #### 5.2.3 文件解码读(getfile)
 
-![文件解码读流程](./img/SimpleCFS Sequence.008.jpg =600x450)
+![文件解码读流程](https://raw.githubusercontent.com/hustlijian/simplecfs/master/docs/img/SimpleCFS Sequence.008.jpg =600x450)
 
 #### 5.2.4 文件删除(delfile)
 
-![文件删除流程](./img/SimpleCFS Sequence.010.jpg =600x450)
+![文件删除流程](https://raw.githubusercontent.com/hustlijian/simplecfs/master/docs/img/SimpleCFS Sequence.010.jpg =600x450)
 
 #### 5.2.5 文件信息(statfile)
 
-![文件信息流程](./img/SimpleCFS Sequence.011.jpg =600x450)
+![文件信息流程](https://raw.githubusercontent.com/hustlijian/simplecfs/master/docs/img/SimpleCFS Sequence.011.jpg =600x450)
 
 ### 5.3 DS操作流程
 
 #### 5.3.1 DS注册
 
-![DS注册流程](./img/SimpleCFS Sequence.012.jpg =600x450)
+![DS注册流程](https://raw.githubusercontent.com/hustlijian/simplecfs/master/docs/img/SimpleCFS Sequence.012.jpg =600x450)
 
 #### 5.3.2 DS状态
 
-![DS状态流程](./img/SimpleCFS Sequence.013.jpg =600x450)
+![DS状态流程](https://raw.githubusercontent.com/hustlijian/simplecfs/master/docs/img/SimpleCFS Sequence.013.jpg =600x450)
 
 #### 5.3.3 chunk状态
 
-![chunk状态流程](./img/SimpleCFS Sequence.014.jpg =600x450)
+![chunk状态流程](https://raw.githubusercontent.com/hustlijian/simplecfs/master/docs/img/SimpleCFS Sequence.014.jpg =600x450)

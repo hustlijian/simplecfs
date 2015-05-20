@@ -85,7 +85,7 @@
 
 系统如下图：
 
-![架构图](./img/SimpleCFS Architecture.001.jpg =600x450)
+![架构图](https://raw.githubusercontent.com/hustlijian/simplecfs/master/docs/img/SimpleCFS Architecture.001.jpg =600x450)
 
 其中MDS是元数据管理结点，也是主控节点，存放DS的节点信息和文件的多级元数据信息，包括文件和目录到ID的映射，ID到信息的映射，其中文件划分为多个object，以object为单位编码到多个chunk，每个chunk相应保存到一个DS结点中。MDS使用内存数据库来做元数据的存储方式，减少了系统的复杂度，使用内存数据库提供了对数据的持久化支持，也提供了良好的访问性能。MDS中只能元数据信息流，没有数据流，相对减小了MDS的负载开销。
 
@@ -96,7 +96,6 @@ Client以API的方式提供给用户使用，提供put, get, delete等几个简�
 ## 4. 模块设计
 详细模块设计如下图：
 
-![模块设计图](./img/SimpleCFS Module.001.jpg =600x450)
 ![模块设计图](https://raw.githubusercontent.com/hustlijian/simplecfs/master/docs/img/SimpleCFS%20Architecture.001.jpg)
 
 ### 4.1 MDS模块设计
@@ -157,7 +156,7 @@ Client API:提供方便简单的类REST API接口给上层的用户使用，如p
 ### 5.1 写入流程
 写入流程如下图：
 
-![写入流程](./img/SimpleCFS Sequence.006.jpg =600x450)
+![写入流程](https://raw.githubusercontent.com/hustlijian/simplecfs/master/docs/img/SimpleCFS Sequence.006.jpg =600x450)
 
 1. 用户使用Client的API调用put_file的接口来写入文件到文件系统，在Client中修改好目标路径为绝对路径，并以此为参数向MDS发起add_file的请求；
 2. MDS接收到add_file的请求，验证文件名在数据库和缓存队列中是否存在，存在则报错，Client接收到错误退出；不存在则设置文件的ID和返回相关的ID(使用一个递增值)和Object数量和大小给Client，元数据先保存到缓存队列中。
@@ -169,7 +168,7 @@ Client API:提供方便简单的类REST API接口给上层的用户使用，如p
 ### 5.2 正常读流程
 正常读时，文件的每个相关的数据chunk都没有出错，流程图如下：
 
-![正常读流程](./img/SimpleCFS Sequence.007.jpg =600x450)
+![正常读流程](https://raw.githubusercontent.com/hustlijian/simplecfs/master/docs/img/SimpleCFS Sequence.007.jpg =600x450)
 
 1. 用户使用Client的API调用get_file的接口来读取文件到应用程序中，在Client设置好目标路径后，以此为参数向MDS发起get_objects请求；
 2. MDS接收到get_objects的请求，验证文件ID的是否存在，不存在则报错；存在则返回objects的数目和ID；
@@ -180,7 +179,7 @@ Client API:提供方便简单的类REST API接口给上层的用户使用，如p
 ### 5.3 解码读流程
 解码读时，文件中的数据chunk有丢失，不过可以使用解码的方式把数据恢复出来，流程图如下：
 
-![解码读流程](./img/SimpleCFS Sequence.008.jpg =600x450)
+![解码读流程](https://raw.githubusercontent.com/hustlijian/simplecfs/master/docs/img/SimpleCFS Sequence.008.jpg =600x450)
 
 1. 用户使用Client的API调用get_file的接口来读取文件到应用程序中，在Client设置好目标路径后，以此为参数向MDS发起get_objects请求；
 2. MDS接收到get_objects的请求，验证文件ID的是否存在，不存在则报错；存在则返回objects的数目和ID；
