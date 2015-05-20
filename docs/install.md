@@ -20,18 +20,18 @@ ssh配置方法：
 	$ cat ~/.ssh/config
 
 	> Host 192.168.3.*
-	> ProxyCommand nc -X connect -x 115.156.209.252:9001 %h %p
+	> ProxyCommand nc -X connect -x IP:PORT %h %p
 
-	$ ssh f309@192.168.3.121
+	$ ssh f309@192.168.3.X
 
 hostname |机器IP | 端口说明 | 用户信息 | 功能
 --- | ---- | ----- | ----- | -----
-de01 | 192.168.3.121 | 22 | user:f309 | mds/client
-de05 | 192.168.3.125 | 22 | user:f309 | ds
-de10 | 192.168.3.130 | 22 | user:f309 | ds
-de17 | 192.168.3.137 | 22 | user:f309 | ds
-de19 | 192.168.3.139 | 22 | user:f309 | ds
-de20 | 192.168.3.140 | 22 | user:f309 | ds
+de01 | 192.168.3.X1| 22 | user:f309 | mds/client
+de05 | 192.168.3.X2| 22 | user:f309 | ds
+de10 | 192.168.3.X3| 22 | user:f309 | ds
+de17 | 192.168.3.X4| 22 | user:f309 | ds
+de19 | 192.168.3.X5| 22 | user:f309 | ds
+de20 | 192.168.3.X6| 22 | user:f309 | ds
 
 ## 4.安装步骤
 
