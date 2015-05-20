@@ -7,6 +7,7 @@ Makefile.in
 /depcomp
 /install-sh
 /missing
+include/config.h
 include/config.h.in
 include/config.h.in~
 include/stamp-h1
@@ -47,8 +48,8 @@ INSTALL
 config.guess
 config.sub
 ltmain.sh
-m4/libtool.m4
-m4/ltversion.m4
+/m4
+
 
 examples/gf_example_1
 examples/gf_example_2
@@ -65,3 +66,5 @@ tools/gf_methods
 tools/gf_mult
 tools/gf_poly
 tools/gf_time
+
+/test-driver
