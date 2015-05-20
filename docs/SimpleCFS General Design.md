@@ -97,6 +97,7 @@ Client以API的方式提供给用户使用，提供put, get, delete等几个简�
 详细模块设计如下图：
 
 ![模块设计图](./img/SimpleCFS Module.001.jpg =600x450)
+![模块设计图](https://raw.githubusercontent.com/hustlijian/simplecfs/master/docs/img/SimpleCFS%20Architecture.001.jpg)
 
 ### 4.1 MDS模块设计
 MDS维护着整个文件系统的全局元数据信息，这些信息是动态更新的，且使用了持久化机制。元数据信息主要包括目录和文件信息，文件chunk的信息和DS的信息。
