@@ -17,8 +17,8 @@ A Simple Coded File System, write in python.
 
 ## Install
     
-    git clone http://github.com/hustlijian/simplecfs.git
-    cd simplecfs  # change directory to simplecfs
+    git clone --recursive http://github.com/hustlijian/simplecfs.git
+    cd simplecfs
 
     sudo apt-get install -y automake libtool autoconf python-dev python-pip
     sudo pip install -r requirements.txt
