@@ -1,6 +1,7 @@
 # SimpleCFS
 
-[![Build Status](https://travis-ci.org/hustustor/simplecfs.png?branch=master)](https://travis-ci.org/hustustor/simplecfs)
+[![Build Status](https://travis-ci.com/hustlijian/simplecfs.svg?branch=master)](https://travis-ci.com/hustlijian/simplecfs)
+
 
 A Simple Coded File System, write in python.
 
